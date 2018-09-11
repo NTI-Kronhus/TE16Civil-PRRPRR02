@@ -4,7 +4,7 @@
 
 
 1. Skapa en metod som tar in ett okänt antal heltal och returnerar deras summa.
-2. Skapa en rekursiv metod som tar in en sträng och returnerar den baklänges.
+2. Skapa en rekursiv metod som tar in en sträng och returnerar den baklänges. [FACIT](https://www.youtube.com/watch?v=Emv1zODKYgc)
 3. Skapa en generisk metod som tar in ett okänt antal objekt och returnerar en array av dem.
 4. Skapa en klass Box som tar in ett okänt antal objekt och lagrar dem.
 5. **Skapa en metod i klassen Box som kan jämföra ifall två stycken Boxar innehåller samma datatyp.***
