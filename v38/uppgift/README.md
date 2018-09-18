@@ -1,7 +1,7 @@
 # Rekursion
 
 ## Hitta ut ur en labyrint 
-
+## [Filer](https://github.com/NTIGBG/TE16Civil-PRRPRR02/tree/master/v37)
 Skapa en class MapSolver som ska ha i uppgift att ta in en Map och sedan kunna ta sig ur den.
 
 Ni får stor firhet i att lösa uppgiften, men några mindre riktlinjer för vilket btyg ni vill satsa på finns här:
@@ -23,7 +23,7 @@ Ni får stor firhet i att lösa uppgiften, men några mindre riktlinjer för vil
   * *Förutom kraven för E och C*
   * Programmet ska i realtid visa hur den navigerar i labyrinten.
   * Din algoritm ska även kunna lösa labyrinter med öppna rum.
-  * Du får enbart skicka in en Application och din MapSolver som ska vara fullt kompatibla med alla [originalfilerna](#) på GitHub.
+  * Du får enbart skicka in en Application och din MapSolver som ska vara fullt kompatibla med alla originalfilerna på GitHub.
 
   
   ## Deadline: 2/10 23:59
