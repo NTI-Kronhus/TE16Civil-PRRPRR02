@@ -33,6 +33,8 @@ public class MapInterpreter {
 						b = new ClosedBlock();
 					} else if (c == 'S') {
 						b = new StartBlock();
+						map.setStartX(col);
+						map.setStartY(row);
 					} else if (c == 'G') {
 						b = new GoalBlock();
 					} else {

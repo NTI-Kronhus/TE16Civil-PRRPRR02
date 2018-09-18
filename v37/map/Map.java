@@ -8,6 +8,7 @@ import javafx.scene.Group;
 public class Map extends Group {
 
 	private ArrayList<ArrayList<Block>> map = new ArrayList<ArrayList<Block>>();
+	private int startX, startY;
 
 	public void add(Block b, int row) {
 		ArrayList<Block> mapRow;
@@ -21,6 +22,18 @@ public class Map extends Group {
 
 		this.getChildren().add(b);
 
+	}
+
+	public ArrayList<ArrayList<Block>> getBlocks() {
+		return this.map;
+	}
+
+	public int getStartX() {
+		return this.startX;
+	}
+
+	public int getStartY() {
+		return this.startY;
 	}
 
 	public Block getBlock(int x, int y) {
@@ -40,6 +53,14 @@ public class Map extends Group {
 
 	public double getHeight() {
 		return map.size() * Block.SIZE;
+	}
+
+	public void setStartX(int x) {
+		this.startX = x;
+	}
+
+	public void setStartY(int y) {
+		this.startY = y;
 	}
 
 }
