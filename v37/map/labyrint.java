@@ -18,11 +18,10 @@ public class labyrint extends Application {
 
 		Scene scene = new Scene(map, map.getWidth(), map.getHeight());
 
-		
-
-
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		
+		
 
 	}
 

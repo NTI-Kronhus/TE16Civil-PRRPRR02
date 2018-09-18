@@ -8,6 +8,7 @@ import com.sun.org.apache.xpath.internal.compiler.OpCodes;
 
 import blocks.Block;
 import blocks.ClosedBlock;
+import blocks.GoalBlock;
 import blocks.OpenBlock;
 import blocks.StartBlock;
 import javafx.scene.paint.Color;
@@ -43,7 +44,7 @@ public class MapInterpreter {
 				}
 				row++;
 			}
-
+			fileReader.close();
 			return map;
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

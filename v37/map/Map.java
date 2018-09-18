@@ -22,19 +22,24 @@ public class Map extends Group {
 		this.getChildren().add(b);
 
 	}
-	
-	public Block getBlock(int x, int y){
+
+	public Block getBlock(int x, int y) {
+		if (y > map.size()) {
+			return null;
+		}
+		if (x > map.get(y).size()) {
+			return null;
+		}
 
 		return this.map.get(y).get(x);
-		
 	}
-	
-	public double getWidth(){
-		return map.get(0).size()*Block.SIZE;
+
+	public double getWidth() {
+		return map.get(0).size() * Block.SIZE;
 	}
-	
-	public double getHeight(){
-		return map.size()*Block.SIZE;
+
+	public double getHeight() {
+		return map.size() * Block.SIZE;
 	}
 
 }
