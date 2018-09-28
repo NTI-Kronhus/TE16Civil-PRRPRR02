@@ -27,4 +27,4 @@ Ni får stor firhet i att lösa uppgiften, men några mindre riktlinjer för vil
 
   
   ## Deadline: 2/10 23:59
-  ### Inskickning ska ske via GitHub och bekräftas i GC
+  ### Inskickning ska ske via GitHub
