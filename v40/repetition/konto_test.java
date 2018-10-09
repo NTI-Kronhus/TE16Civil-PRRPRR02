@@ -1,3 +1,4 @@
+package repetition;
 
 public class konto_test {
 
