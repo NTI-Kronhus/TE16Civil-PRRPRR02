@@ -3,6 +3,7 @@ package hus;
 import java.util.ArrayList;
 
 import javafx.scene.Group;
+import javafx.scene.input.ScrollEvent.HorizontalTextScrollUnits;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
 import javafx.scene.shape.Rectangle;
@@ -12,7 +13,9 @@ public class House extends Group {
 	private double HOUSE_WIDTH;
 	private double FLOOR_HEIGHT;
 	private int FLOORS;
-	private ArrayList<Rectangle> floors = new ArrayList<Rectangle>();
+	private ArrayList<Floor> floors = new ArrayList<Floor>();
+	
+	private Door door;
 	
 	public House() {
 		this(1,false);
@@ -35,19 +38,31 @@ public class House extends Group {
 		}
 		
 		this.FLOORS = floors + 1;
-		this.HOUSE_WIDTH = 100;
-		this.FLOOR_HEIGHT = 50;
+		this.HOUSE_WIDTH = 200;
+		this.FLOOR_HEIGHT = 100;
 
 		Polygon roof = new Polygon(HOUSE_WIDTH / 2, 0, 0, FLOOR_HEIGHT, HOUSE_WIDTH, FLOOR_HEIGHT);
 		this.getChildren().add(roof);
+		Floor f;
+		f = new SingleWindowFloor(HOUSE_WIDTH,FLOOR_HEIGHT,1);
 
-		for (int i = 1; i <= floors; i++) {
-			Rectangle floor = new Rectangle(0, i * FLOOR_HEIGHT, HOUSE_WIDTH, FLOOR_HEIGHT);
-			floor.setFill(Color.SANDYBROWN);
-			floor.setStroke(Color.BLACK);
-			this.getChildren().add(floor);
-			this.floors.add(floor);
+	
+		this.getChildren().add(f);
+		this.floors.add(f);
+		for (int level = 2; level < floors; level++) {
+			 
+				f = new DoubleWindowFloor(HOUSE_WIDTH,FLOOR_HEIGHT,level);
+
+			
+			this.getChildren().add(f);
+			this.floors.add(f);
 		}
+		GroundFloor gf = new GroundFloor(HOUSE_WIDTH,FLOOR_HEIGHT,floors);
+		this.door = gf.getDoor();
+		this.getChildren().add(gf);
+		
+		this.floors.add(gf);
+
 
 		if (basement) {
 			Rectangle base = new Rectangle(0, (floors + 1) * FLOOR_HEIGHT, HOUSE_WIDTH, FLOOR_HEIGHT);
@@ -82,13 +97,18 @@ public class House extends Group {
 		Polygon roof = new Polygon(H_WIDTH / 2, 0, 0, F_HEIGHT, H_WIDTH, F_HEIGHT);
 		this.getChildren().add(roof);
 
-		for (int i = 1; i <= floors; i++) {
-			Rectangle floor = new Rectangle(0, i * F_HEIGHT, H_WIDTH, F_HEIGHT);
-			floor.setFill(Color.SANDYBROWN);
-			floor.setStroke(Color.BLACK);
-			this.getChildren().add(floor);
-			this.floors.add(floor);
+		for (int level = 1; level < floors; level++) {
+			Floor f = new DoubleWindowFloor(HOUSE_WIDTH,FLOOR_HEIGHT,level);
+			
+			this.getChildren().add(f);
+			this.floors.add(f);
 		}
+		GroundFloor f = new GroundFloor(HOUSE_WIDTH,FLOOR_HEIGHT,floors);
+		
+		this.door = f.getDoor();
+		this.getChildren().add(f);
+		
+		this.floors.add(f);
 
 		if (basement) {
 			Rectangle base = new Rectangle(0, (floors + 1) * F_HEIGHT, H_WIDTH, F_HEIGHT);
@@ -101,9 +121,15 @@ public class House extends Group {
 	}
 
 	public void repaint(Color c) {
-		for (Rectangle floor : floors) {
+		for (Floor floor : floors) {
 			floor.setFill(c);
 		}
+	}
+
+	public boolean isDoorOpen() {
+
+		return door.isOpen();
+
 	}
 
 }
