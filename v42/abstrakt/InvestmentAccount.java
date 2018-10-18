@@ -5,7 +5,6 @@ public class InvestmentAccount extends Account{
 	public InvestmentAccount(String owner){
 		super(owner);
 
-		
 	}
 	
 	@Override
