@@ -1,6 +1,7 @@
 ## Threads i Java
 
-Skapa en tom textfil/docs och svara på frågorna i steg 3-7. Diskutera gärna resultaten med era grannar men jag vill att alla ska skriva koden och svaren!
+Skapa en tom textfil/docs och svara på frågorna i steg 3-7. <br>
+Diskutera gärna resultaten med era grannar men jag vill att alla ska skriva koden och svaren!
 
 ### Counter
 1. Skapa en ny klass Counter, vars uppgift är att kunna räkna. <br>
