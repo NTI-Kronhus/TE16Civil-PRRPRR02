@@ -7,7 +7,7 @@
     * Vad händer när man startar spelet? Vad händer när man klickar på en pjäs?
     * Vad händer när man klickar för att flytta en pjäs? Vad händer när man tar en annan pjäs?
     * Vad händer om en kung ställs i schack? Hur vinner man och vad händer då?
-    * Var något svårt? Var något lätt?
+  * Var något svårt? Var något lätt?
   * Stötte du på några problem du fastnade på? Hur löste du dem?
   * Hade du tillräckligt med förkunskaper? Vad saknade du för förkunskaper?
   * Ser du några förbättringar som kan göras? Förklara bara hur man hade kunnat göra.
