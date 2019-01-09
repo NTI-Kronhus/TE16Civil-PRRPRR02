@@ -20,4 +20,4 @@
 Bra sida att skapa UML-diagram på: [draw.io](https://www.draw.io/)
 
 
-Skicka in ditt dokument på Google Classroom senast 20/1.
+Skicka in ditt dokument på Google Classroom senast 13/1.
