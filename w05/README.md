@@ -52,6 +52,12 @@ Ta fram er lösning från laboration 1 och fortsätta därifrån. Är ni inte kl
 * Viktiga saker att ha i åtanke under den här uppgiften:
   * Undvik kodduplicering för funktionalitet som är gemensam för ex. bilfärjan och biltransporten.
  
+ ### Uppgift D
+ 
+ * Uppdatera/Skriv JavaDoc för alla era klasser och metoder.
+ * Uppdatera ert UML-diagram mer er nya design.
+ 
+ 
 ### Extra uppgifter för mer utmaning
   * Låt bilfärjan ha ett antal olika filer i vilka bilarna kan befinna sig. För varje fil gäller att bilarna i den filen enbart kan lastas av i samma ordning som de lastades på (first-in-first-out), men bilar från olika filer kan lastas av i olika ordning (även omväxlande mellan filerna).
   * Utöka er command line controller till att hantera alla nya element.
