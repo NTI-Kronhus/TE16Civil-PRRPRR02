@@ -12,6 +12,7 @@ Ta fram er lösning från laboration 2 och fortsätt därifrån. Är ni inte kla
 2. Installera filen och öppna sedan samma workspace som tidigare för att se alla dina projekt som vanligt.
 3. I ditt projekt som högerklicka på projektet och välj properties.
     * Välj sedan Java Build Path 
+    * Välj fliken Libraries
     * Klicka på Add Library...
     * Välj JUnit
     * Markera JUnit 5 och klicka Finish
