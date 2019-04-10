@@ -30,4 +30,13 @@ för att det ska gå att använda tillsammans med er lösning från lab 2.
 * Glöm inte att Saaben och Scanian ska förhindras att åka utanför rutan.
 
 ### Uppgift C
-* TBA (Vi kommer ha lite mer genomgång först)
+* Uppdatera ert UML-diagram och analysera er kod + UML utifrån följande punkter:
+  * Hur ser er cohesion ut innuti M, V och C?
+  * Hur ser er coupling ut?
+    * Om möjligt: Ge förslag på hur ni kan minska er coupling.
+  * Kan ni identifiera någonstans där ni följer någon/några designprinciper?
+  * Kan ni identifiera någonstans där ni bryter mot någon/några designprinciper?
+    * Ge ett **exempel** på hur ni kan designa om på ett bättre sätt det eller motivera varför ni måste bryta mot just den desigprincipen.
+  * Kan ni applicera något designmönster som underlättar implementering och/eller gör att er kod följer någon designprincip bättre?
+* Sammanställ svaren i ett simpelt textdokument och lägg i ert repo.
+
