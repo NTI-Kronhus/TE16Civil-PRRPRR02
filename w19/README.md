@@ -3,3 +3,6 @@
 * [Del 2 - Designmönster](https://docs.google.com/presentation/d/1JM-ZNFSLUg9eSOlbjn7L-ztRPJfns-UHUB459GhUvX0/edit?usp=sharing)
 * [Del 3 - Grundläggane koncept](https://docs.google.com/document/d/11-jkotGhK5m77g3pt5i3dnjuYVwh7eWHETNNIHg42Uk/edit?usp=sharing)
 * Del 4 pluggar ni på själva utifrån era gemensamma projekt!
+
+
+* [Tidsschema](https://docs.google.com/spreadsheets/d/1hMyY5gJCn1YuwuZFe7x08-J1d4Xx91HIDfcA4fZFXtU/edit#gid=0)
